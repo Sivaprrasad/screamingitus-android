@@ -14,4 +14,15 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+    //R1 - tests number of days >0
+    //Day<=0 retuns -1
+    @Test
+    public int testNumberOfDays(int day){
+        if (day<=0){
+            return -1;
+        }
+        return day;
+        assertEquals(day, "");
+    }
 }

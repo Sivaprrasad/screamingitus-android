@@ -23,4 +23,6 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.example.screamitus_android", appContext.getPackageName());
     }
+
+
 }
