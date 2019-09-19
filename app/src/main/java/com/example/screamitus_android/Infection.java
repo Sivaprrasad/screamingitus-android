@@ -1,15 +1,21 @@
 package com.example.screamitus_android;
 
 public class Infection {
-    int numDays;
-    int infectedInstructors;
 
-    public int calculateTotalInfected(int day){
+    int numInfected;
 
-        if(day<=0)
-        {
+    public int calculateTotalInfected(int days){
+        if (days<=0){
             return -1;
         }
+        else (days>0){
+            numInfected = days*5;
+        }
+//        else if(days >7)
+//        {
+//            numInfected = days
+//        }
+        return numInfected;
 
     }
 
