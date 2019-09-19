@@ -37,7 +37,7 @@ public class ExampleUnitTest {
         assertEquals(infection.numInfected, 25);
     }
 
-    
+
 
 
 

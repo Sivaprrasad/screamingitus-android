@@ -11,9 +11,13 @@ public class Infection {
         else if(days>0){
             numInfected = days*5;
         }
+
         return numInfected;
 
-        else if
+        if(days > 7)
+        {
+
+        }
 
     }
 
