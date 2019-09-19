@@ -8,14 +8,12 @@ public class Infection {
         if (days<=0){
             return -1;
         }
-        else (days>0){
+        else if(days>0){
             numInfected = days*5;
         }
-//        else if(days >7)
-//        {
-//            numInfected = days
-//        }
         return numInfected;
+
+        else if
 
     }
 

@@ -2,6 +2,7 @@ package com.example.screamitus_android;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.robolectric.RobolectricTestRunner;
 
 import static org.junit.Assert.*;
 
@@ -22,11 +23,23 @@ public class ExampleUnitTest {
 
     //R1 - tests number of days >0
     //Day<=0 retuns -1
+    @RunWith(RobolectricTestRunner.class)
     @Test
     public void testNumberOfDays(int days){
         infection.calculateTotalInfected(0);
         assertEquals(infection.numInfected, -1);
     }
+
+    //R2 - Testing the rate of instructors at 5
+    @Test
+    public void testRateOfInstructors(){
+        infection.calculateTotalInfected(5);
+        assertEquals(infection.numInfected, 25);
+    }
+
+    
+
+
 
 
 }
