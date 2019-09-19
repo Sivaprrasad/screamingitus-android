@@ -23,9 +23,10 @@ public class ExampleUnitTest {
     //R1 - tests number of days >0
     //Day<=0 retuns -1
     @Test
-    public int testNumberOfDays(int day){
-        infection =
+    public void testNumberOfDays(int days){
+        infection.calculateTotalInfected(0);
+        assertEquals(infection.numInfected, -1);
+    }
 
 
-    }return;
 }
